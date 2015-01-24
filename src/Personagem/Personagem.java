@@ -1,11 +1,14 @@
 package Personagem;
 
+import Main.Animacao;
+
 public class Personagem {
 
-	public Personagem(String nome, int batimento, int larica) {
+	public Personagem(String nome, int batimento, int larica, Animacao animacao) {
 		this.nome = nome;
 		this.batimento = batimento;
 		this.larica = larica;
+		this.animacao = animacao;
 	}
 	
 	private String nome;
@@ -13,6 +16,8 @@ public class Personagem {
 	private int batimento;
 	
 	private int larica;
+	
+	private Animacao animacao;
 
 	public String getNome(){
 		return nome;
@@ -24,5 +29,9 @@ public class Personagem {
 	
 	public int getLarica(){
 		return larica;
+	}
+	
+	public Animacao getAnimacao(){
+		return animacao;
 	}
 }
